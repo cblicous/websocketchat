@@ -1,9 +1,11 @@
 /* CSS Document */
 body {
 	font:12px arial;
-	color: #222;
+	color: #FFFFFF;
 	text-align:center;
-	padding:35px; }
+	padding:35px; 
+	background-color: #33342D;
+	}
 
 form, p, span {
 	margin:0;
@@ -11,29 +13,40 @@ form, p, span {
 
 input { font:12px arial; }
 
+#headline {
+	float: left;
+	}
 a {
 	color:#0000FF;
 	text-decoration:none; }
 
-	a:hover { text-decoration:underline; }
+	a:hover { 
+	text-decoration:underline; 
+	}
 
-#body{
+#chatbody{
 	margin:0 auto;
 	padding-bottom:25px;
-	background:#CCCCCC;
+	background:#33342D;
 	width:504px;
 	border:0px solid }
 
+.username { float:left; }
 
+#messages {
+	background:#46483E;
+	border:0 px ;
+	color : #40FF00;
+}
 #chatbox {
 	text-align:left;
 	margin:0 auto;
 	margin-bottom:25px;
 	padding:10px;
-	background:#fff;
+	background:#46483E;
 	height:270px;
-	width:430px;
-	border:0 px solid #ACD8F0;
+	width:100%;
+	border:0 px ;
 	overflow:auto; }
 
 #usermsg {
@@ -46,7 +59,7 @@ a {
 
 #menu { padding:12.5px 25px 12.5px 25px; }
 
-.welcome { float:left; }
+
 
 
 .msgln { margin:0 0 2px 0; }

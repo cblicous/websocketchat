@@ -1,4 +1,14 @@
 <html>
+<!-- 
+             _                  _                _              
+            | |                | |              | |             
+          _ | |   ,   __   __  | |   _ _|_  __  | |     __, _|_ 
+ |  |  |_|/ |/ \_/ \_/  \_/    |/_) |/  |  /    |/ \   /  |  |  
+  \/ \/  |__/\_/  \/ \__/ \___/| \_/|__/|_/\___/|   |_/\_/|_/|_/
+                                                                
+                                                                                                                                            
+Sample Demoapplication for websocket Conntections with Jetty 8 and jQuery
+ -->
 <head>
 <meta name="description" content="HTML5 WebSocket Chat" />
 <meta name="keywords" content="HTML5,WebSocket,JavaScript" />
@@ -16,7 +26,7 @@
 			
 	
 				ws.onopen = function(event) {
-					alert("success socket opened");
+					console.log("yaaaay ! socket opened");
 				}
 				ws.onmessage = function(event) {
 					var $textarea = $('#messages');
@@ -26,7 +36,7 @@
 					}, 1000);
 				}
 				ws.onclose = function(event) {
-					
+					console.log("websocket closed , Y U NO CHAT ? ");
 				}
 	
 			});
@@ -41,10 +51,13 @@
 </script>
 </head>
 <body>
-	<div id="body">
+	<div id="chatbody">
 		<div id="menu">
-			<p class="welcome">
-				Welcome,<input id="username" value="anonymous" />			
+		<h1 id="headline">websocket chat</h1>
+		<div style="clear: both"></div>
+			<p class="username">
+				Username: 
+				<input id="username" value="anonymous" />			
 			</p>
 			<div style="clear: both"></div>
 		</div>
