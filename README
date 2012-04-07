@@ -1,4 +1,4 @@
-websocketchat is a small chat program using jetty, mvn, servlet 3 and html5 
+websocketchat is a small websocket based chat program using jetty, mvn, servlet 3 and html5 
 
 It was build based on some examples I found on the web just for testing purposes
 
